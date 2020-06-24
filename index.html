@@ -1,0 +1,57 @@
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>NY Children Exposure Effects Map</title>
+
+    <!-- discourage the browser from caching the page --> 
+    <meta http-equiv='Cache-Control' content='no-cache, no-store, must-revalidate' />
+    <meta http-equiv='Pragma' content='no-cache' />
+    <meta http-equiv='Expires' content='0' />
+
+    <meta name='viewport' content='initial-scale=1, maximum-scale=1, user-scaleble=no'/>
+    
+    <!-- stylesheet links -->   
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='style.css' rel='stylesheet' />
+
+    <!-- javascript links -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js'>
+    </script>
+
+</head>
+
+<body>
+    <div id='map'></div>
+
+    <div class='map-overlay' id='features'><h2>NY Upward Mobility & School Info</h2>
+        <div id='pd'><p>Hover over a Census Tract!</p></div>
+    </div>
+    <div class='map-overlay' id='legend'>
+       <h4>Expected Children Income Percentile</h4>
+       <div>
+           <span style='background-color:#00344d'></span>0-30%
+        </div>
+        <div>
+            <span style='background-color:#00649e'></span>30%-40%
+         </div>
+         <div>
+            <span style='background-color:#0696ea'></span>40%-50%
+         </div>
+         <div>
+            <span style='background-color:#75c3f0'></span>50%-60%
+         </div>
+         <div>
+            <span style='background-color:#dfeffb'></span>60%-70%
+         </div>
+         <div>
+            <span style='background-color:#dfeffb'></span>70%-100%
+         </div>
+         
+    </div>
+       
+
+    <!-- load additional javascript -->
+    <script src='map.js'></script> 
+    
+</body>
+</html>
